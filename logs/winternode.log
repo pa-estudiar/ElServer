@@ -1,0 +1,980 @@
+generic.starting_container
+Detected java version being overwritten, using 'Java 17'...
+This choice can be reset by deleting the 'disable_prompt_for_java_version' file.
+:/home/container$ java17 -Xms1G -Xmx6G -Dterminal.jline=false -Dterminal.ansi=true -Duser.timezone=America/Chicago -jar arclight-forge-1.18.2-1.0.8.jar
+Using locale en_us and fallback locale zh_cn
+[0m[21:25:57 INFO] [Arclight]:
+
+[0;34m    ___ [0;34;1m     [0;36m     [0;33m___[0;33;1m  [0;33m   __   /\
+[0;34m   /   |[0;34;1m ____[0;36m____[0;33m/ [0;33;1m(_)[0;33m__ / /  / /
+[0;34m  / /| |[0;34;1m/ __[0;36m/ __[0;33m/ [0;33;1m/ /[0;33m _ / _ \/__/
+[0;34m / ___ [0;34;1m/ / [0;36m/ /_[0;33m/ [0;33;1m/ /[0;33m / / // / /
+[0;34m/_/  |[0;34;1m/_/  [0;36m\__[0;33m/_[0;33;1m/_/[0;33m\_ /_//_/ /
+[0;34m      [0;34;1m     [0;36m    [0;33m  [0;33;1m [0;33m/__/     \/
+
+[0;32;1mVersion arclight-1.18.2-1.0.8-e80a33d2
+[0;32;1mBuild Date 2023-02-02 08:12:59
+[m
+[m[0m[21:25:57 INFO] [c.m.m.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 40.1.80, --fml.mcVersion, 1.18.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220404.173914]
+[m[0m[21:25:57 INFO] [c.m.m.Launcher/MODLAUNCHER]: ModLauncher 9.1.3+9.1.3+main.9b69c82a starting: java version 17.0.3 by Private Build
+[m[0m[21:25:57 INFO] [mixin]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/home/container/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2316!/ Service=ModLauncher Env=SERVER
+[m[33m[21:25:57 WARN]: Mod file /home/container/libraries/net/minecraftforge/fmlcore/1.18.2-40.1.80/fmlcore-1.18.2-40.1.80.jar is missing mods.toml file
+[m[33m[21:25:57 WARN]: Mod file /home/container/libraries/net/minecraftforge/javafmllanguage/1.18.2-40.1.80/javafmllanguage-1.18.2-40.1.80.jar is missing mods.toml file
+[m[33m[21:25:57 WARN]: Mod file /home/container/libraries/net/minecraftforge/lowcodelanguage/1.18.2-40.1.80/lowcodelanguage-1.18.2-40.1.80.jar is missing mods.toml file
+[m[33m[21:25:57 WARN]: Mod file /home/container/libraries/net/minecraftforge/mclanguage/1.18.2-40.1.80/mclanguage-1.18.2-40.1.80.jar is missing mods.toml file
+[m[0m[21:25:57 INFO]: No dependencies to load found. Skipping!
+[m[0m[21:25:59 INFO] [mixin]: Compatibility level set to JAVA_17
+[m[0m[21:25:59 INFO] [mixin]: Successfully loaded Mixin Connector [io.izzel.arclight.common.mod.ArclightConnector]
+[m[0m[21:25:59 INFO] [Arclight]: Arclight core mixin added.
+[m[0m[21:25:59 INFO] [Arclight]: Arclight optimization mixin added.
+[m[0m[21:25:59 INFO] [c.m.m.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+[m[33m[21:26:05 WARN] [mixin]: Static binding violation: PRIVATE @Overwrite method m_150430_ in mixins.arclight.core.json:world.inventory.AbstractContainerMenuMixin cannot reduce visibiliy of PROTECTED target method, visibility will be upgraded.
+[m[0m[21:26:12 INFO] [Arclight]: Arclight Mod loaded.
+[m[0m[21:26:12 INFO] [b.f.e.ExpandAbility]: ExpandAbility here, who dis?
+[m[0m[21:26:12 INFO]: Forge mod loading, version 40.1.80, for MC 1.18.2 with MCP 20220404.173914
+[m[0m[21:26:12 INFO]: MinecraftForge v40.1.80 Initialized
+[m[0m[21:26:12 INFO] [Arclight]: Arclight events registered.
+[m[33m[21:26:12 WARN]: Configuration file /home/container/config/dungeons_gear-common.toml is not correct. Correcting
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration was corrected from null to its default, SimpleCommentedConfig:{}.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableDungeonsGearLoot was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableDungeonsGearLootOnBonusChest was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableExperimental was corrected from null to its default, false.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableSalvaging was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableVillagerTrades was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableFriendlyPetFire was corrected from null to its default, false.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableEnchantmentTrades was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableEnchantmentLoot was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableEnchantsOnNonDungeonsGear was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableOverpoweredEnchantmentDualWields was corrected from null to its default, false.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enchantmentBlacklist was corrected from null to its default, [dungeons_gear:lucky_explorer].
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.treasureOnlyEnchantments was corrected from null to its default, [dungeons_gear:masters_call].
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableMeleeWeaponLoot was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableRangedWeaponLoot was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableArmorLoot was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableArtifactLoot was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableMeleeWeaponTab was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableRangedWeaponTab was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableArmorTab was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.enableArtifactTab was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.commonItemValue was corrected from null to its default, 12.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.uniqueItemValue was corrected from null to its default, 24.
+[m[33m[21:26:12 WARN]: Incorrect key general_mod_configuration.artifactValue was corrected from null to its default, 24.
+[m[33m[21:26:12 WARN]: Incorrect key compatibility_configuration was corrected from null to its default, SimpleCommentedConfig:{}.
+[m[33m[21:26:12 WARN]: Incorrect key compatibility_configuration.enableProjectWarDanceCompat was corrected from null to its default, true.
+[m[33m[21:26:12 WARN]: Incorrect key item_configuration was corrected from null to its default, SimpleCommentedConfig:{}.
+[m[33m[21:26:12 WARN]: Incorrect key item_configuration.meleeWeaponDurability was corrected from null to its default, 250.
+[m[33m[21:26:12 WARN]: Incorrect key rarity_loot_table_configuration was corrected from null to its default, SimpleCommentedConfig:{}.
+[m[33m[21:26:12 WARN]: Incorrect key rarity_loot_table_configuration.commonLootTables was corrected from null to its default, [minecraft:chests/abandoned_mineshaft, minecraft:chests/ruined_portal, minecraft:chests/shipwreck, minecraft:chests/village/village_armorer, minecraft:chests/village/village_tannery, minecraft:chests/village/village_temple, minecraft:chests/village/village_weaponsmith, repurposed_structures:chests/mineshaft/birch, repurposed_structures:chests/mineshaft/crimson, repurposed_structures:chests/mineshaft/desert, repurposed_structures:chests/mineshaft/end, repurposed_structures:chests/mineshaft/icy, repurposed_structures:chests/mineshaft/jungle, repurposed_structures:chests/mineshaft/nether, repurposed_structures:chests/mineshaft/ocean, repurposed_structures:chests/mineshaft/savanna, repurposed_structures:chests/mineshaft/stone, repurposed_structures:chests/mineshaft/dark_forest, repurposed_structures:chests/mineshaft/swamp, repurposed_structures:chests/mineshaft/taiga, repurposed_structures:chests/mineshaft/warped, repurposed_structures:chests/cities/nether, repurposed_structures:chests/igloos/grassy_chest, repurposed_structures:chests/igloos/stone_chest, repurposed_structures:chests/ruin/nether, repurposed_structures:chests/ruin/land_hot/large, repurposed_structures:chests/ruin/land_hot/small, repurposed_structures:chests/ruin/land_warm/large, repurposed_structures:chests/ruin/land_warm/small, repurposed_structures:chests/ruined_portal/large_portal_chest, repurposed_structures:chests/ruined_portal/small_portal_chest, repurposed_structures:chests/village/village_crimson_tanner, repurposed_structures:chests/village/village_crimson_weaponsmith, repurposed_structures:chests/village/village_warped_tanner, repurposed_structures:chests/village/village_warped_weaponsmith, betterdungeons:small_dungeon/chests/loot_piles, dungeoncrawl:chests/stage_1, dungeoncrawl:chests/stage_2, iceandfire:chest/lightning_dragon_roost, iceandfire:chest/fire_dragon_female_cave, iceandfire:chest/ice_dragon_male_cave, iceandfire:chest/ice_dragon_roost, iceandfire:chest/lightning_dragon_female_cave, iceandfire:chest/fire_dragon_male_cave, iceandfire:chest/myrmex_loot_chest, iceandfire:chest/ice_dragon_female_cave, iceandfire:chest/fire_dragon_roost, iceandfire:chest/lightning_dragon_male_cave, iceandfire:chest/cyclops_cave, iceandfire:chest/graveyard, iceandfire:chest/hydra_cave, totw_reworked:ocean_tower_chest, totw_reworked:tower_chest, towers_of_the_wild:chests/tower/ocean/ocean_tower_chest, towers_of_the_wild:chests/tower/regular/tower_chest, valhelsia_structures:chests/castle, valhelsia_structures:chests/castle_ruin, valhelsia_structures:chests/player_house, valhelsia_structures:chests/treasure, valhelsia_structures:chests/witch_hut, dungeons_plus:chests/bigger_dungeon/husk, dungeons_plus:chests/bigger_dungeon/stray, dungeons_plus:chests/leviathan/common, dungeons_plus:chests/snowy_temple/common, dungeons_plus:chests/vanilla_dungeon, dungeons_plus:chests/warped_garden/common].
+[m[33m[21:26:12 WARN]: Incorrect key rarity_loot_table_configuration.commonLootTablesBlacklist was corrected from null to its default, [dungeonsplus:_map].
+[m[33m[21:26:12 WARN]: Incorrect key rarity_loot_table_configuration.fancyLootTables was corrected from null to its default, [minecraft:chests/desert_pyramid, minecraft:chests/igloo_chest, minecraft:chests/jungle_temple, minecraft:chests/nether_bridge, minecraft:chests/pillager_outpost, minecraft:chests/simple_dungeon, minecraft:chests/underwater_ruin, repurposed_structures:chests/dungeon/badlands, repurposed_structures:chests/dungeon/dark_forest, repurposed_structures:chests/dungeon/desert, repurposed_structures:chests/dungeon/end, repurposed_structures:chests/dungeon/jungle, repurposed_structures:chests/dungeon/mushroom, repurposed_structures:chests/dungeon/nether, repurposed_structures:chests/dungeon/ocean, repurposed_structures:chests/dungeon/snow, repurposed_structures:chests/dungeon/swamp, repurposed_structures:chests/fortress/jungle, repurposed_structures:chests/fortress/jungle, repurposed_structures:chests/fortress/jungle, repurposed_structures:chests/outpost/badlands_chest, repurposed_structures:chests/outpost/birch_chest, repurposed_structures:chests/outpost/crimson_chest, repurposed_structures:chests/outpost/desert_chest, repurposed_structures:chests/outpost/giant_tree_taiga_chest, repurposed_structures:chests/outpost/icy_chest, repurposed_structures:chests/outpost/jungle_chest, repurposed_structures:chests/outpost/nether_brick_chest, repurposed_structures:chests/outpost/oak_chest, repurposed_structures:chests/outpost/snowy_chest, repurposed_structures:chests/outpost/taiga_chest, repurposed_structures:chests/outpost/warped_chest, repurposed_structures:chests/outpost/end_shulker_box, repurposed_structures:chests/pyramid/badlands_chest, repurposed_structures:chests/pyramid/nether_chest, repurposed_structures:chests/pyramid/snowy_chest, repurposed_structures:chests/pyramid/icy_chest, repurposed_structures:chests/pyramid/jungle_chest, repurposed_structures:chests/pyramid/mushroom_chest, repurposed_structures:chests/pyramid/ocean_chest, repurposed_structures:chests/pyramid/giant_tree_taiga_chest, repurposed_structures:chests/pyramid/flower_forest_chest, repurposed_structures:chests/pyramid/end_chest, repurposed_structures:chests/shipwreck/crimson/, repurposed_structures:chests/shipwreck/crimson/, repurposed_structures:chests/shipwreck/crimson/, repurposed_structures:chests/shipwreck/end/map_chest, repurposed_structures:chests/shipwreck/end/supply_chest, repurposed_structures:chests/shipwreck/end/treasure_chest, repurposed_structures:chests/shipwreck/warped/map_chest, repurposed_structures:chests/shipwreck/warped/supply_chest, repurposed_structures:chests/shipwreck/warped/treasure_chest, repurposed_structures:chests/shipwreck/nether_bricks/treasure_chest, repurposed_structures:chests/temple/nether_basalt_chest, repurposed_structures:chests/temple/nether_crimson_chest, repurposed_structures:chests/temple/nether_soul_chest, repurposed_structures:chests/temple/nether_warped_chest, repurposed_structures:chests/temple/nether_warped_trapped_chest, repurposed_structures:chests/temple/nether_wasteland_chest, betterstrongholds:chests/common, betterstrongholds:chests/end/common, betterstrongholds:chests/nether/common, betterdungeons:skeleton_dungeon/chests/common, betterdungeons:skeleton_dungeon/chests/middle, betterdungeons:skeleton_dungeon/chests/common, betterdungeons:spider_dungeon/chests/egg_room, betterdungeons:zombie_dungeon/chests/common, betterdungeons:zombie_dungeon/chests/special, betterdungeons:zombie_dungeon/chests/tombstone, dungeoncrawl:chests/stage_3, dungeoncrawl:chests/stage_4, dungeoncrawl:chests/forge, valhelsia_structures:chests/desert_house, valhelsia_structures:chests/forge, valhelsia_structures:chests/spawner_dungeon, dungeons_plus:chests/soul_prison/common, dungeons_plus:chests/tower/vex].
+[m[33m[21:26:12 WARN]: Incorrect key rarity_loot_table_configuration.fancyLootTablesBlacklist was corrected from null to its default, [minecraft:chests/_dispenser, repurposed_structures:_dispenser, repurposed_structures:_dispenser, repurposed_structures:_dispenser, repurposed_structures:_dispenser, repurposed_structures:_dispenser, dungeonsplus:_map].
+[m[33m[21:26:12 WARN]: Incorrect key rarity_loot_table_configuration.obsidianLootTables was corrected from null to its default, [minecraft:chests/bastion, minecraft:chests/buried_treasure, minecraft:chests/end_city_treasure, minecraft:chests/stronghold, minecraft:chests/woodland_mansion, repurposed_structures:chests/bastions, repurposed_structures:chests/mansion/birch, repurposed_structures:chests/mansion/desert, repurposed_structures:chests/mansion/jungle, repurposed_structures:chests/mansion/oak, repurposed_structures:chests/mansion/savanna, repurposed_structures:chests/mansion/snowy, repurposed_structures:chests/mansion/taiga, repurposed_structures:shulker_boxes/stronghold/end_storage_room, repurposed_structures:shulker_boxes/stronghold/end_hallway, repurposed_structures:shulker_boxes/stronghold/end_library, repurposed_structures:chests/stronghold/nether_storage_room, repurposed_structures:chests/stronghold/nether_hallway, repurposed_structures:chests/stronghold/nether_library, betterstrongholds:chests/armoury, betterstrongholds:chests/crypt, betterstrongholds:chests/mess, betterstrongholds:chests/prison_lg, betterstrongholds:chests/trap, betterstrongholds:chests/treasure, betterstrongholds:chests/end/armoury, betterstrongholds:chests/end/crypt, betterstrongholds:chests/end/mess, betterstrongholds:chests/end/prison_lg, betterstrongholds:chests/end/trap, betterstrongholds:chests/end/treasure, betterstrongholds:chests/nether/mess, betterstrongholds:chests/nether/armoury, betterstrongholds:chests/nether/crypt, betterstrongholds:chests/nether/prison_lg, betterstrongholds:chests/nether/trap, betterstrongholds:chests/nether/treasure, dungeoncrawl:chests/stage_5, dungeoncrawl:chests/treasure, iceandfire:chest/mausoleum_chest].
+[m[33m[21:26:12 WARN]: Incorrect key rarity_loot_table_configuration.obsidianLootTableBlacklist was corrected from null to its default, [dungeonsplus:_map].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration was corrected from null to its default, SimpleCommentedConfig:{}.
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.basicLootTables was corrected from null to its default, [minecraft:chests/abandoned_mineshaft, minecraft:chests/pillager_outpost, minecraft:chests/simple_dungeon, minecraft:chests/stronghold, minecraft:chests/woodland_mansion, minecraft:chests/village/village_armorer, minecraft:chests/village/village_tannery, minecraft:chests/village/village_temple, minecraft:chests/village/village_weaponsmith, repurposed_structures:chests/mineshaft/birch, repurposed_structures:chests/mineshaft/crimson, repurposed_structures:chests/mineshaft/savanna, repurposed_structures:chests/mineshaft/stone, repurposed_structures:chests/mineshaft/dark_forest, repurposed_structures:chests/mineshaft/swamp, repurposed_structures:chests/mineshaft/taiga, repurposed_structures:chests/bastions, repurposed_structures:chests/dungeon/badlands, repurposed_structures:chests/dungeon/dark_forest, repurposed_structures:chests/dungeon/mushroom, repurposed_structures:chests/dungeon/swamp, repurposed_structures:chests/igloos/grassy_chest, repurposed_structures:chests/igloos/stone_chest, repurposed_structures:chests/mansion/birch, repurposed_structures:chests/mansion/oak, repurposed_structures:chests/mansion/savanna, repurposed_structures:chests/mansion/taiga, repurposed_structures:chests/outpost/birch_chest, repurposed_structures:chests/outpost/oak_chest, repurposed_structures:chests/pyramid/mushroom_chest, repurposed_structures:chests/pyramid/flower_forest_chest, repurposed_structures:chests/ruin/land_hot/large, repurposed_structures:chests/ruin/land_hot/small, repurposed_structures:chests/ruin/land_warm/large, repurposed_structures:chests/ruin/land_warm/small, betterstrongholds:chests/armoury, betterstrongholds:chests/common, betterstrongholds:chests/crypt, betterstrongholds:chests/mess, betterstrongholds:chests/prison_lg, betterstrongholds:chests/trap, betterstrongholds:chests/treasure, betterdungeons:skeleton_dungeon/chests/common, betterdungeons:skeleton_dungeon/chests/middle, betterdungeons:small_dungeon/chests/loot_piles, betterdungeons:spider_dungeon/chests/egg_room, betterdungeons:zombie_dungeon/chests/common, betterdungeons:zombie_dungeon/chests/special, betterdungeons:zombie_dungeon/chests/tombstone, dungeoncrawl:chests/stage_1, dungeoncrawl:chests/stage_2, dungeoncrawl:chests/stage_3, dungeoncrawl:chests/stage_4, dungeoncrawl:chests/stage_5, dungeoncrawl:chests/treasure, dungeoncrawl:chests/forge, iceandfire:chest/lightning_dragon_roost, iceandfire:chest/fire_dragon_female_cave, iceandfire:chest/ice_dragon_male_cave, iceandfire:chest/ice_dragon_roost, iceandfire:chest/lightning_dragon_female_cave, iceandfire:chest/fire_dragon_male_cave, iceandfire:chest/myrmex_loot_chest, iceandfire:chest/ice_dragon_female_cave, iceandfire:chest/fire_dragon_roost, iceandfire:chest/lightning_dragon_male_cave, iceandfire:chest/mausoleum_chest, iceandfire:chest/cyclops_cave, iceandfire:chest/graveyard, iceandfire:chest/hydra_cave, totw_reworked:ocean_tower_chest, totw_reworked:tower_chest, towers_of_the_wild:chests/tower/ocean/ocean_tower_chest, towers_of_the_wild:chests/tower/regular/tower_chest, valhelsia_structures:chests/castle, valhelsia_structures:chests/castle_ruin, valhelsia_structures:chests/forge, valhelsia_structures:chests/player_house, valhelsia_structures:chests/spawner_dungeon, valhelsia_structures:chests/treasure, valhelsia_structures:chests/witch_hut, dungeons_plus:chests/soul_prison/common, dungeons_plus:chests/tower/vex, dungeons_plus:chests/vanilla_dungeon].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.basicLootTablesBlacklist was corrected from null to its default, [].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.desertLootTables was corrected from null to its default, [minecraft:chests/desert_pyramid, repurposed_structures:chests/mineshaft/desert, repurposed_structures:chests/dungeon/desert, repurposed_structures:chests/mansion/desert, repurposed_structures:chests/outpost/badlands_chest, repurposed_structures:chests/outpost/desert_chest, repurposed_structures:chests/pyramid/badlands_chest, valhelsia_structures:chests/desert_house, dungeons_plus:chests/bigger_dungeon/husk, dungeons_plus:chests/leviathan/common].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.desertLootTablesBlacklist was corrected from null to its default, [].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.oceanLootTables was corrected from null to its default, [minecraft:chests/buried_treasure, minecraft:chests/shipwreck, minecraft:chests/underwater_ruin, repurposed_structures:chests/mineshaft/ocean, repurposed_structures:chests/dungeon/ocean, repurposed_structures:chests/pyramid/ocean_chest].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.oceanLootTablesBlacklist was corrected from null to its default, [minecraft:chests/buried_treasure].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.coldLootTables was corrected from null to its default, [minecraft:chests/igloo_chest, repurposed_structures:chests/mineshaft/icy, repurposed_structures:chests/dungeon/snow, repurposed_structures:chests/mansion/snowy, repurposed_structures:chests/outpost/giant_tree_taiga_chest, repurposed_structures:chests/outpost/icy_chest, repurposed_structures:chests/outpost/snowy_chest, repurposed_structures:chests/outpost/taiga_chest, repurposed_structures:chests/pyramid/snowy_chest, repurposed_structures:chests/pyramid/icy_chest, repurposed_structures:chests/pyramid/giant_tree_taiga_chest, dungeons_plus:chests/bigger_dungeon/stray, dungeons_plus:chests/snowy_temple/common].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.coldLootTablesBlacklist was corrected from null to its default, [].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.jungleLootTables was corrected from null to its default, [minecraft:chests/jungle_temple, repurposed_structures:chests/mineshaft/jungle, repurposed_structures:chests/dungeon/jungle, repurposed_structures:chests/fortress/jungle, repurposed_structures:chests/fortress/jungle, repurposed_structures:chests/fortress/jungle, repurposed_structures:chests/mansion/jungle, repurposed_structures:chests/outpost/jungle_chest, repurposed_structures:chests/pyramid/jungle_chest].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.jungleLootTablesBlacklist was corrected from null to its default, [].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.netherLootTables was corrected from null to its default, [minecraft:chests/bastion, minecraft:chests/nether_bridge, minecraft:chests/ruined_portal, repurposed_structures:chests/mineshaft/nether, repurposed_structures:chests/mineshaft/warped, repurposed_structures:chests/cities/nether, repurposed_structures:chests/dungeon/nether, repurposed_structures:chests/outpost/crimson_chest, repurposed_structures:chests/outpost/nether_brick_chest, repurposed_structures:chests/outpost/warped_chest, repurposed_structures:chests/pyramid/nether_chest, repurposed_structures:chests/ruin/nether, repurposed_structures:chests/ruined_portal/large_portal_chest, repurposed_structures:chests/ruined_portal/small_portal_chest, repurposed_structures:chests/shipwreck/crimson/, repurposed_structures:chests/shipwreck/crimson/, repurposed_structures:chests/shipwreck/crimson/, repurposed_structures:chests/shipwreck/warped/map_chest, repurposed_structures:chests/shipwreck/warped/supply_chest, repurposed_structures:chests/shipwreck/warped/treasure_chest, repurposed_structures:chests/shipwreck/nether_bricks/treasure_chest, repurposed_structures:chests/stronghold/nether_storage_room, repurposed_structures:chests/stronghold/nether_hallway, repurposed_structures:chests/stronghold/nether_library, repurposed_structures:chests/temple/nether_basalt_chest, repurposed_structures:chests/temple/nether_crimson_chest, repurposed_structures:chests/temple/nether_soul_chest, repurposed_structures:chests/temple/nether_warped_chest, repurposed_structures:chests/temple/nether_warped_trapped_chest, repurposed_structures:chests/temple/nether_wasteland_chest, repurposed_structures:chests/village/village_crimson_tanner, repurposed_structures:chests/village/village_crimson_weaponsmith, repurposed_structures:chests/village/village_warped_tanner, repurposed_structures:chests/village/village_warped_weaponsmith, betterstrongholds:chests/nether/common, betterstrongholds:chests/nether/mess, betterstrongholds:chests/nether/armoury, betterstrongholds:chests/nether/crypt, betterstrongholds:chests/nether/prison_lg, betterstrongholds:chests/nether/trap, betterstrongholds:chests/nether/treasure, betterdungeons:skeleton_dungeon/chests/common, dungeons_plus:chests/warped_garden/common].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.netherLootTablesBlacklist was corrected from null to its default, [].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.endLootTables was corrected from null to its default, [minecraft:chests/end_city_treasure, repurposed_structures:chests/mineshaft/end, repurposed_structures:chests/dungeon/end, repurposed_structures:chests/outpost/end_shulker_box, repurposed_structures:chests/pyramid/end_chest, repurposed_structures:chests/shipwreck/end/map_chest, repurposed_structures:chests/shipwreck/end/supply_chest, repurposed_structures:chests/shipwreck/end/treasure_chest, repurposed_structures:shulker_boxes/stronghold/end_storage_room, repurposed_structures:shulker_boxes/stronghold/end_hallway, repurposed_structures:shulker_boxes/stronghold/end_library, betterstrongholds:chests/end/armoury, betterstrongholds:chests/end/common, betterstrongholds:chests/end/crypt, betterstrongholds:chests/end/mess, betterstrongholds:chests/end/prison_lg, betterstrongholds:chests/end/trap, betterstrongholds:chests/end/treasure].
+[m[33m[21:26:12 WARN]: Incorrect key type_loot_table_configuration.endLootTablesBlacklist was corrected from null to its default, [].
+[m[33m[21:26:12 WARN]: Incorrect key effect_specific_configuration was corrected from null to its default, SimpleCommentedConfig:{}.
+[m[33m[21:26:12 WARN]: Incorrect key effect_specific_configuration.partyStarterDamage was corrected from null to its default, 4.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration was corrected from null to its default, SimpleCommentedConfig:{}.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.busyBeeBaseChance was corrected from null to its default, 0.1.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.busyBeeChancePerLevel was corrected from null to its default, 0.1.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.tumbleBeeChancePerLevel was corrected from null to its default, 0.1.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.rampagingChance was corrected from null to its default, 0.2.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.rampagingDuration was corrected from null to its default, 100.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.rushdownDuration was corrected from null to its default, 20.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.weakeningDuration was corrected from null to its default, 100.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.weakeningDistance was corrected from null to its default, 5.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.leechingBaseMultiplier was corrected from null to its default, 0.2.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.leechingMultiplierPerLevel was corrected from null to its default, 0.2.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.dynamoMaxStacks was corrected from null to its default, 20.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.dynamoDamageMultiplierPerStack was corrected from null to its default, 0.1.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.committedBaseMultiplier was corrected from null to its default, 1.25.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.committedMultiplierPerLevel was corrected from null to its default, 0.25.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.freezingDuration was corrected from null to its default, 60.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.soulSiphonChance was corrected from null to its default, 0.05.
+[m[33m[21:26:12 WARN]: Incorrect key enchantment_specific_configuration.soulSiphonSoulsPerLevel was corrected from null to its default, 2.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.chainsChance was corrected from null to its default, 0.3.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.radianceChance was corrected from null to its default, 0.2.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.thunderingChance was corrected from null to its default, 0.3.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.thunderingBaseDamage was corrected from null to its default, 5.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.altruisticDamageToHealingPerLevel was corrected from null to its default, 0.25.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.beastBossBaseMultiplier was corrected from null to its default, 0.1.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.beastBossMultiplierPerLevel was corrected from null to its default, 0.1.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.beastBurstDamagePerLevel was corrected from null to its default, 5.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.beastSurgeDuration was corrected from null to its default, 200.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.cowardiceBaseMultiplier was corrected from null to its default, 0.1.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.cowardiceMultiplierPerLevel was corrected from null to its default, 0.1.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.deflectChancePerLevel was corrected from null to its default, 0.2.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.focusMultiplierPerLevel was corrected from null to its default, 0.25.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.frenziedMultiplierPerLevel was corrected from null to its default, 0.1.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.gravityPulseBaseStrength was corrected from null to its default, 0.1.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.gravityPulseStrengthPerLevel was corrected from null to its default, 0.1.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.potionBarrierBaseDuration was corrected from null to its default, 60.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.potionBarrierDurationPerLevel was corrected from null to its default, 20.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.recklessMaxHealthMultiplier was corrected from null to its default, -0.6.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.recklessAttackDamageBaseMultiplier was corrected from null to its default, 0.2.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.recklessAttackDamageMultiplierPerLevel was corrected from null to its default, 0.2.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.explodingMultiplierPerLevel was corrected from null to its default, 0.2.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.prospectorChancePerLevel was corrected from null to its default, 0.3.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.dodgeChancePerLevel was corrected from null to its default, 0.01.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.voidDodgeChancePerLevel was corrected from null to its default, 0.05.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.beehiveChancePerLevel was corrected from null to its default, 0.1.
+[m[33m[21:26:13 WARN]: Incorrect key enchantment_specific_configuration.stunningChancePerLevel was corrected from null to its default, 0.1.
+[m[33m[21:26:13 WARN]: Incorrect key artifact_specific_configuration was corrected from null to its default, SimpleCommentedConfig:{}.
+[m[33m[21:26:13 WARN]: Incorrect key artifact_specific_configuration.loveMedallionBlacklist was corrected from null to its default, [minecraft:ender_dragon, minecraft:elder_guardian, minecraft:wither].
+[m[0m[21:26:14 INFO] [Puzzles Lib]: Registering 1 element(s) to registry of type minecraft:block_entity_type for mod id visualworkbench
+[m[0m[21:26:14 INFO] [Puzzles Lib]: Registering 1 element(s) to registry of type minecraft:menu for mod id visualworkbench
+[m[33m[21:26:15 WARN]: Configuration file /home/container/config/dungeons_libraries-common.toml is not correct. Correcting
+[m[33m[21:26:15 WARN]: Incorrect key combat_configuration was corrected from null to its default, SimpleCommentedConfig:{}.
+[m[33m[21:26:15 WARN]: Incorrect key combat_configuration.enableAreaOfEffectOnOtherPlayers was corrected from null to its default, false.
+[m[33m[21:26:15 WARN]: Incorrect key combat_configuration.effectTargetBlacklist was corrected from null to its default, [].
+[m[33m[21:26:15 WARN]: Incorrect key combat_configuration.effectTargetWhitelist was corrected from null to its default, [].
+[m[33m[21:26:15 WARN]: Incorrect key combat_configuration.enableDualWielding was corrected from null to its default, true.
+[m[33m[21:26:15 WARN]: Incorrect key combat_configuration.enableTwoHandedWeapon was corrected from null to its default, true.
+[m[33m[21:26:15 WARN]: Incorrect key souls_configuration was corrected from null to its default, SimpleCommentedConfig:{}.
+[m[33m[21:26:15 WARN]: Incorrect key souls_configuration.enableKeepSoulsOnDeath was corrected from null to its default, false.
+[m[33m[21:26:15 WARN]: Incorrect key artifact_configuration was corrected from null to its default, SimpleCommentedConfig:{}.
+[m[33m[21:26:15 WARN]: Incorrect key artifact_configuration.artifactDurability was corrected from null to its default, 64.
+[m[33m[21:26:15 WARN]: Incorrect key elite_mob_configuration was corrected from null to its default, SimpleCommentedConfig:{}.
+[m[33m[21:26:15 WARN]: Incorrect key elite_mob_configuration.enableEliteMobs was corrected from null to its default, true.
+[m[33m[21:26:15 WARN]: Incorrect key elite_mob_configuration.eliteMobsBaseChance was corrected from null to its default, 0.15.
+[m[0m[21:26:15 INFO] [x.p.OpenPartiesAndClaims]: Loading Open Parties and Claims!
+[m[0m[21:26:16 INFO] [x.c.s.XaeroMinimapServer]: Loading Xaero's Minimap - Stage 1/2 (Server)
+[m[0m[21:26:16 INFO] [x.c.s.XaeroMinimapServer]: Loading Xaero's Minimap - Stage 2/2 (Server)
+[m[0m[21:26:16 INFO]: [puzzleslib] Starting version check at https://raw.githubusercontent.com/Fuzss/modresources/main/update/puzzleslib.json
+[m[0m[21:26:17 INFO]: [puzzleslib] Found status: UP_TO_DATE Current: 3.3.5 Target: null
+[m[0m[21:26:17 INFO]: [visualworkbench] Starting version check at https://raw.githubusercontent.com/Fuzss/modresources/main/update/visualworkbench.json
+[m[0m[21:26:17 INFO]: [visualworkbench] Found status: UP_TO_DATE Current: 3.3.0 Target: null
+[m[0m[21:26:17 INFO]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[m[0m[21:26:17 INFO]: [forge] Found status: OUTDATED Current: 40.1.80 Target: 40.2.0
+[m[0m[21:26:19 INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:dagger Expected: 1311 Got: 1349
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:fang_of_frost Expected: 1312 Got: 1350
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:moon_dagger Expected: 1313 Got: 1351
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:shear_dagger Expected: 1314 Got: 1352
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:sickle Expected: 1315 Got: 1353
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:nightmares_bite Expected: 1316 Got: 1354
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:the_last_laugh Expected: 1317 Got: 1355
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:gauntlet Expected: 1318 Got: 1356
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:fighters_binding Expected: 1319 Got: 1357
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:mauler Expected: 1320 Got: 1358
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:soul_fist Expected: 1321 Got: 1359
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:rapier Expected: 1322 Got: 1360
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:bee_stinger Expected: 1323 Got: 1361
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:freezing_foil Expected: 1324 Got: 1362
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:soul_scythe Expected: 1325 Got: 1363
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:frost_scythe Expected: 1326 Got: 1364
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:jailors_scythe Expected: 1327 Got: 1365
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:cutlass Expected: 1328 Got: 1366
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:dancers_sword Expected: 1329 Got: 1367
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:nameless_blade Expected: 1330 Got: 1368
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:sparkler Expected: 1331 Got: 1369
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:sword Expected: 1332 Got: 1370
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:stone_sword Expected: 1333 Got: 1371
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:gold_sword Expected: 1334 Got: 1372
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:diamond_sword Expected: 1335 Got: 1373
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:hawkbrand Expected: 1336 Got: 1374
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:sinister_sword Expected: 1337 Got: 1375
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:pickaxe Expected: 1338 Got: 1376
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:diamond_pickaxe Expected: 1339 Got: 1377
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:battlestaff Expected: 1340 Got: 1378
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:battlestaff_of_terror Expected: 1341 Got: 1379
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:growing_staff Expected: 1342 Got: 1380
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:axe Expected: 1343 Got: 1381
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:gold_axe Expected: 1344 Got: 1382
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:firebrand Expected: 1345 Got: 1383
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:highland_axe Expected: 1346 Got: 1384
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:double_axe Expected: 1347 Got: 1385
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:cursed_axe Expected: 1348 Got: 1386
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:whirlwind Expected: 1349 Got: 1387
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:mace Expected: 1350 Got: 1388
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:flail Expected: 1351 Got: 1389
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:suns_grace Expected: 1352 Got: 1390
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:great_hammer Expected: 1353 Got: 1391
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:hammer_of_gravity Expected: 1354 Got: 1392
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:stormlander Expected: 1355 Got: 1393
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:katana Expected: 1356 Got: 1394
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:dark_katana Expected: 1357 Got: 1395
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:masters_katana Expected: 1358 Got: 1396
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:soul_knife Expected: 1359 Got: 1397
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:eternal_knife Expected: 1360 Got: 1398
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:truthseeker Expected: 1361 Got: 1399
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:claymore Expected: 1362 Got: 1400
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:broadsword Expected: 1363 Got: 1401
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:heartstealer Expected: 1364 Got: 1402
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:great_axeblade Expected: 1365 Got: 1403
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:frost_slayer Expected: 1366 Got: 1404
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:spear Expected: 1367 Got: 1405
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:fortune_spear Expected: 1368 Got: 1406
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:whispering_spear Expected: 1369 Got: 1407
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:glaive Expected: 1370 Got: 1408
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:grave_bane Expected: 1371 Got: 1409
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:venom_glaive Expected: 1372 Got: 1410
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:whip Expected: 1373 Got: 1411
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:vine_whip Expected: 1374 Got: 1412
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:tempest_knife Expected: 1375 Got: 1413
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:resolute_tempest_knife Expected: 1376 Got: 1414
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:chill_gale_knife Expected: 1377 Got: 1415
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:boneclub Expected: 1378 Got: 1416
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:bone_cudgel Expected: 1379 Got: 1417
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:anchor Expected: 1380 Got: 1418
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:encrusted_anchor Expected: 1381 Got: 1419
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:bonebow Expected: 1382 Got: 1420
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:twin_bow Expected: 1383 Got: 1421
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:haunted_bow Expected: 1384 Got: 1422
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:soul_bow Expected: 1385 Got: 1423
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:bow_of_lost_souls Expected: 1386 Got: 1424
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:nocturnal_bow Expected: 1387 Got: 1425
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:shivering_bow Expected: 1388 Got: 1426
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:power_bow Expected: 1389 Got: 1427
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:elite_power_bow Expected: 1390 Got: 1428
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:sabrewing Expected: 1391 Got: 1429
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:longbow Expected: 1392 Got: 1430
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:guardian_bow Expected: 1393 Got: 1431
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:red_snake Expected: 1394 Got: 1432
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:hunting_bow Expected: 1395 Got: 1433
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:hunters_promise Expected: 1396 Got: 1434
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:masters_bow Expected: 1397 Got: 1435
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:ancient_bow Expected: 1398 Got: 1436
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:shortbow Expected: 1399 Got: 1437
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:mechanical_shortbow Expected: 1400 Got: 1438
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:purple_storm Expected: 1401 Got: 1439
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:love_spell_bow Expected: 1402 Got: 1440
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:trickbow Expected: 1403 Got: 1441
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:the_green_menace Expected: 1404 Got: 1442
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:the_pink_scoundrel Expected: 1405 Got: 1443
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:sugar_rush Expected: 1406 Got: 1444
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:snow_bow Expected: 1407 Got: 1445
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:winters_touch Expected: 1408 Got: 1446
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:wind_bow Expected: 1409 Got: 1447
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:burst_gale_bow Expected: 1410 Got: 1448
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:echo_of_the_valley Expected: 1411 Got: 1449
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:rapid_crossbow Expected: 1412 Got: 1450
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:butterfly_crossbow Expected: 1413 Got: 1451
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:auto_crossbow Expected: 1414 Got: 1452
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:azure_seeker Expected: 1415 Got: 1453
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:the_slicer Expected: 1416 Got: 1454
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:heavy_crossbow Expected: 1417 Got: 1455
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:doom_crossbow Expected: 1418 Got: 1456
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:slayer_crossbow Expected: 1419 Got: 1457
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:soul_crossbow Expected: 1420 Got: 1458
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:feral_soul_crossbow Expected: 1421 Got: 1459
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:voidcaller Expected: 1422 Got: 1460
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:scatter_crossbow Expected: 1423 Got: 1461
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:harp_crossbow Expected: 1424 Got: 1462
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:lightning_harp_crossbow Expected: 1425 Got: 1463
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:exploding_crossbow Expected: 1426 Got: 1464
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:firebolt_thrower Expected: 1427 Got: 1465
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:imploding_crossbow Expected: 1428 Got: 1466
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:burst_crossbow Expected: 1429 Got: 1467
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:corrupted_crossbow Expected: 1430 Got: 1468
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:soul_hunter_crossbow Expected: 1431 Got: 1469
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:dual_crossbow Expected: 1432 Got: 1470
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:baby_crossbow Expected: 1433 Got: 1471
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:harpoon_crossbow Expected: 1434 Got: 1472
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:nautical_crossbow Expected: 1435 Got: 1473
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:boots_of_swiftness Expected: 1436 Got: 1474
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:death_cap_mushroom Expected: 1437 Got: 1475
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:golem_kit Expected: 1438 Got: 1476
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:tasty_bone Expected: 1439 Got: 1477
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:wonderful_wheat Expected: 1440 Got: 1478
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:gong_of_weakening Expected: 1441 Got: 1479
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:lightning_rod Expected: 1442 Got: 1480
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:iron_hide_amulet Expected: 1443 Got: 1481
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:love_medallion Expected: 1444 Got: 1482
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:ghost_cloak Expected: 1445 Got: 1483
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:harvester Expected: 1446 Got: 1484
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:shock_powder Expected: 1447 Got: 1485
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:corrupted_seeds Expected: 1448 Got: 1486
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:ice_wand Expected: 1449 Got: 1487
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:wind_horn Expected: 1450 Got: 1488
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:soul_healer Expected: 1451 Got: 1489
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:light_feather Expected: 1452 Got: 1490
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:flaming_quiver Expected: 1453 Got: 1491
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:torment_quiver Expected: 1454 Got: 1492
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:totem_of_regeneration Expected: 1455 Got: 1493
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:totem_of_shielding Expected: 1456 Got: 1494
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:totem_of_soul_protection Expected: 1457 Got: 1495
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:corrupted_beacon Expected: 1458 Got: 1496
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:buzzy_nest Expected: 1459 Got: 1497
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:enchanted_grass Expected: 1460 Got: 1498
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:corrupted_pumpkin Expected: 1461 Got: 1499
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:thundering_quiver Expected: 1462 Got: 1500
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:harpoon_quiver Expected: 1463 Got: 1501
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:satchel_of_elixirs Expected: 1464 Got: 1502
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:satchel_of_snacks Expected: 1465 Got: 1503
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:satchel_of_elements Expected: 1466 Got: 1504
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:powershaker Expected: 1467 Got: 1505
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:updraft_tome Expected: 1468 Got: 1506
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:eye_of_the_guardian Expected: 1469 Got: 1507
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:fireworks_display Expected: 1470 Got: 1508
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:soul_lantern Expected: 1471 Got: 1509
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:hunters_helmet Expected: 1472 Got: 1510
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:hunters_chestplate Expected: 1473 Got: 1511
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:hunters_leggings Expected: 1474 Got: 1512
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:hunters_boots Expected: 1475 Got: 1513
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:archers_helmet Expected: 1476 Got: 1514
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:archers_chestplate Expected: 1477 Got: 1515
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:archers_leggings Expected: 1478 Got: 1516
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:archers_boots Expected: 1479 Got: 1517
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:battle_robes_helmet Expected: 1480 Got: 1518
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:battle_robes_chestplate Expected: 1481 Got: 1519
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:battle_robes_leggings Expected: 1482 Got: 1520
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:battle_robes_boots Expected: 1483 Got: 1521
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:champions_helmet Expected: 1484 Got: 1522
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:champions_chestplate Expected: 1485 Got: 1523
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:champions_leggings Expected: 1486 Got: 1524
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:champions_boots Expected: 1487 Got: 1525
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:heros_helmet Expected: 1488 Got: 1526
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:heros_chestplate Expected: 1489 Got: 1527
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:heros_leggings Expected: 1490 Got: 1528
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:heros_boots Expected: 1491 Got: 1529
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:dark_helmet Expected: 1492 Got: 1530
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:dark_chestplate Expected: 1493 Got: 1531
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:dark_leggings Expected: 1494 Got: 1532
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:dark_boots Expected: 1495 Got: 1533
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:titans_shroud_helmet Expected: 1496 Got: 1534
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:titans_shroud_chestplate Expected: 1497 Got: 1535
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:titans_shroud_leggings Expected: 1498 Got: 1536
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:titans_shroud_boots Expected: 1499 Got: 1537
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:evocation_robes_helmet Expected: 1500 Got: 1538
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:evocation_robes_chestplate Expected: 1501 Got: 1539
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:evocation_robes_leggings Expected: 1502 Got: 1540
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:evocation_robes_boots Expected: 1503 Got: 1541
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:ember_robes_helmet Expected: 1504 Got: 1542
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:ember_robes_chestplate Expected: 1505 Got: 1543
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:ember_robes_leggings Expected: 1506 Got: 1544
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:ember_robes_boots Expected: 1507 Got: 1545
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:grim_helmet Expected: 1508 Got: 1546
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:grim_chestplate Expected: 1509 Got: 1547
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:grim_leggings Expected: 1510 Got: 1548
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:grim_boots Expected: 1511 Got: 1549
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:wither_helmet Expected: 1512 Got: 1550
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:wither_chestplate Expected: 1513 Got: 1551
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:wither_leggings Expected: 1514 Got: 1552
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:wither_boots Expected: 1515 Got: 1553
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:guards_helmet Expected: 1516 Got: 1554
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:guards_chestplate Expected: 1517 Got: 1555
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:guards_leggings Expected: 1518 Got: 1556
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:guards_boots Expected: 1519 Got: 1557
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:curious_helmet Expected: 1520 Got: 1558
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:curious_chestplate Expected: 1521 Got: 1559
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:curious_leggings Expected: 1522 Got: 1560
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:curious_boots Expected: 1523 Got: 1561
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:mercenary_helmet Expected: 1524 Got: 1562
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:mercenary_chestplate Expected: 1525 Got: 1563
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:mercenary_leggings Expected: 1526 Got: 1564
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:mercenary_boots Expected: 1527 Got: 1565
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:renegade_helmet Expected: 1528 Got: 1566
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:renegade_chestplate Expected: 1529 Got: 1567
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:renegade_leggings Expected: 1530 Got: 1568
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:renegade_boots Expected: 1531 Got: 1569
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:hungry_horror_helmet Expected: 1532 Got: 1570
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:hungry_horror_chestplate Expected: 1533 Got: 1571
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:hungry_horror_leggings Expected: 1534 Got: 1572
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:hungry_horror_boots Expected: 1535 Got: 1573
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:ocelot_helmet Expected: 1536 Got: 1574
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:ocelot_chestplate Expected: 1537 Got: 1575
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:ocelot_leggings Expected: 1538 Got: 1576
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:ocelot_boots Expected: 1539 Got: 1577
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:shadow_walker_helmet Expected: 1540 Got: 1578
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:shadow_walker_chestplate Expected: 1541 Got: 1579
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:shadow_walker_leggings Expected: 1542 Got: 1580
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:shadow_walker_boots Expected: 1543 Got: 1581
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:phantom_helmet Expected: 1544 Got: 1582
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:phantom_chestplate Expected: 1545 Got: 1583
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:phantom_leggings Expected: 1546 Got: 1584
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:phantom_boots Expected: 1547 Got: 1585
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:frost_bite_helmet Expected: 1548 Got: 1586
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:frost_bite_chestplate Expected: 1549 Got: 1587
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:frost_bite_leggings Expected: 1550 Got: 1588
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:frost_bite_boots Expected: 1551 Got: 1589
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:plate_helmet Expected: 1552 Got: 1590
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:plate_chestplate Expected: 1553 Got: 1591
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:plate_leggings Expected: 1554 Got: 1592
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:plate_boots Expected: 1555 Got: 1593
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:full_metal_helmet Expected: 1556 Got: 1594
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:full_metal_chestplate Expected: 1557 Got: 1595
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:full_metal_leggings Expected: 1558 Got: 1596
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:full_metal_boots Expected: 1559 Got: 1597
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:reinforced_mail_helmet Expected: 1560 Got: 1598
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:reinforced_mail_chestplate Expected: 1561 Got: 1599
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:reinforced_mail_leggings Expected: 1562 Got: 1600
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:reinforced_mail_boots Expected: 1563 Got: 1601
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:stalwart_helmet Expected: 1564 Got: 1602
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:stalwart_chestplate Expected: 1565 Got: 1603
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:stalwart_leggings Expected: 1566 Got: 1604
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:stalwart_boots Expected: 1567 Got: 1605
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:scale_mail_helmet Expected: 1568 Got: 1606
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:scale_mail_chestplate Expected: 1569 Got: 1607
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:scale_mail_leggings Expected: 1570 Got: 1608
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:scale_mail_boots Expected: 1571 Got: 1609
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:highland_helmet Expected: 1572 Got: 1610
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:highland_chestplate Expected: 1573 Got: 1611
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:highland_leggings Expected: 1574 Got: 1612
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:highland_boots Expected: 1575 Got: 1613
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:snow_helmet Expected: 1576 Got: 1614
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:snow_chestplate Expected: 1577 Got: 1615
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:snow_leggings Expected: 1578 Got: 1616
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:snow_boots Expected: 1579 Got: 1617
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:frost_helmet Expected: 1580 Got: 1618
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:frost_chestplate Expected: 1581 Got: 1619
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:frost_leggings Expected: 1582 Got: 1620
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:frost_boots Expected: 1583 Got: 1621
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:soul_helmet Expected: 1584 Got: 1622
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:soul_chestplate Expected: 1585 Got: 1623
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:soul_leggings Expected: 1586 Got: 1624
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:soul_boots Expected: 1587 Got: 1625
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:souldancer_helmet Expected: 1588 Got: 1626
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:souldancer_chestplate Expected: 1589 Got: 1627
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:souldancer_leggings Expected: 1590 Got: 1628
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:souldancer_boots Expected: 1591 Got: 1629
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:spelunker_helmet Expected: 1592 Got: 1630
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:spelunker_chestplate Expected: 1593 Got: 1631
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:spelunker_leggings Expected: 1594 Got: 1632
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:spelunker_boots Expected: 1595 Got: 1633
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:cave_crawler_helmet Expected: 1596 Got: 1634
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:cave_crawler_chestplate Expected: 1597 Got: 1635
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:cave_crawler_leggings Expected: 1598 Got: 1636
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:cave_crawler_boots Expected: 1599 Got: 1637
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:thief_helmet Expected: 1600 Got: 1638
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:thief_chestplate Expected: 1601 Got: 1639
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:thief_leggings Expected: 1602 Got: 1640
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:thief_boots Expected: 1603 Got: 1641
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:spider_helmet Expected: 1604 Got: 1642
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:spider_chestplate Expected: 1605 Got: 1643
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:spider_leggings Expected: 1606 Got: 1644
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:spider_boots Expected: 1607 Got: 1645
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:wolf_helmet Expected: 1608 Got: 1646
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:wolf_chestplate Expected: 1609 Got: 1647
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:wolf_leggings Expected: 1610 Got: 1648
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:wolf_boots Expected: 1611 Got: 1649
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:fox_helmet Expected: 1612 Got: 1650
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:fox_chestplate Expected: 1613 Got: 1651
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:fox_leggings Expected: 1614 Got: 1652
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:fox_boots Expected: 1615 Got: 1653
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:arctic_fox_helmet Expected: 1616 Got: 1654
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:arctic_fox_chestplate Expected: 1617 Got: 1655
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:arctic_fox_leggings Expected: 1618 Got: 1656
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:arctic_fox_boots Expected: 1619 Got: 1657
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:climbing_helmet Expected: 1620 Got: 1658
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:climbing_chestplate Expected: 1621 Got: 1659
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:climbing_leggings Expected: 1622 Got: 1660
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:climbing_boots Expected: 1623 Got: 1661
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:rugged_climbing_helmet Expected: 1624 Got: 1662
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:rugged_climbing_chestplate Expected: 1625 Got: 1663
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:rugged_climbing_leggings Expected: 1626 Got: 1664
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:rugged_climbing_boots Expected: 1627 Got: 1665
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:goat_helmet Expected: 1628 Got: 1666
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:goat_chestplate Expected: 1629 Got: 1667
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:goat_leggings Expected: 1630 Got: 1668
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:goat_boots Expected: 1631 Got: 1669
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:emerald_helmet Expected: 1632 Got: 1670
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:emerald_chestplate Expected: 1633 Got: 1671
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:emerald_leggings Expected: 1634 Got: 1672
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:emerald_boots Expected: 1635 Got: 1673
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:gilded_glory_helmet Expected: 1636 Got: 1674
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:gilded_glory_chestplate Expected: 1637 Got: 1675
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:gilded_glory_leggings Expected: 1638 Got: 1676
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:gilded_glory_boots Expected: 1639 Got: 1677
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:opulent_helmet Expected: 1640 Got: 1678
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:opulent_chestplate Expected: 1641 Got: 1679
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:opulent_leggings Expected: 1642 Got: 1680
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:opulent_boots Expected: 1643 Got: 1681
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:beenest_helmet Expected: 1644 Got: 1682
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:beenest_chestplate Expected: 1645 Got: 1683
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:beenest_leggings Expected: 1646 Got: 1684
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:beenest_boots Expected: 1647 Got: 1685
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:beehive_helmet Expected: 1648 Got: 1686
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:beehive_chestplate Expected: 1649 Got: 1687
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:beehive_leggings Expected: 1650 Got: 1688
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:beehive_boots Expected: 1651 Got: 1689
+[m[33m[21:26:20 WARN]: Registry minecraft:item: Object did not get ID it asked for. Name: dungeons_gear:arrow_bundle Expected: 1652 Got: 1690
+[m[33m[21:26:20 WARN]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: dungeons_gear:entity.ice_chunk.idle_loop Expected: 1216 Got: 1223
+[m[33m[21:26:20 WARN]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: dungeons_gear:entity.ice_chunk.summoned Expected: 1217 Got: 1224
+[m[33m[21:26:20 WARN]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: dungeons_gear:entity.ice_chunk.fall Expected: 1218 Got: 1225
+[m[33m[21:26:20 WARN]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: dungeons_gear:entity.ice_chunk.land Expected: 1219 Got: 1226
+[m[33m[21:26:20 WARN]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: dungeons_gear:entity.soul_wizard.appear Expected: 1220 Got: 1227
+[m[33m[21:26:20 WARN]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: dungeons_gear:entity.soul_wizard.hurt Expected: 1221 Got: 1228
+[m[33m[21:26:20 WARN]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: dungeons_gear:entity.soul_wizard.shoot Expected: 1222 Got: 1229
+[m[33m[21:26:20 WARN]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: dungeons_gear:entity.soul_wizard.projectile_impact Expected: 1223 Got: 1230
+[m[33m[21:26:20 WARN]: Registry minecraft:sound_event: Object did not get ID it asked for. Name: dungeons_gear:entity.soul_wizard.fly_loop Expected: 1224 Got: 1231
+[m[33m[21:26:20 WARN]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: dungeons_libraries:soul_orb Expected: 115 Got: 116
+[m[33m[21:26:20 WARN]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: dungeons_gear:ice_cloud Expected: 116 Got: 117
+[m[33m[21:26:20 WARN]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: dungeons_gear:buzzy_nest Expected: 117 Got: 118
+[m[33m[21:26:20 WARN]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: dungeons_gear:totem_of_shielding Expected: 118 Got: 119
+[m[33m[21:26:20 WARN]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: dungeons_gear:totem_of_regeneration Expected: 119 Got: 120
+[m[33m[21:26:20 WARN]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: dungeons_gear:totem_of_soul_protection Expected: 120 Got: 121
+[m[33m[21:26:20 WARN]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: dungeons_gear:beam_entity Expected: 121 Got: 122
+[m[33m[21:26:20 WARN]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: dungeons_gear:fireworks_display Expected: 122 Got: 123
+[m[33m[21:26:20 WARN]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: dungeons_gear:soul_wizard_orb Expected: 123 Got: 124
+[m[33m[21:26:20 WARN]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: dungeons_gear:soul_wizard Expected: 124 Got: 125
+[m[33m[21:26:21 WARN]: Assets URL 'union:/home/container/libraries/net/minecraft/server/1.18.2-20220404.173914/server-1.18.2-20220404.173914-srg.jar%2391!/assets/.mcassetsroot' uses unexpected schema
+[m[33m[21:26:21 WARN]: Assets URL 'union:/home/container/libraries/net/minecraft/server/1.18.2-20220404.173914/server-1.18.2-20220404.173914-srg.jar%2391!/data/.mcassetsroot' uses unexpected schema
+[m[33m[21:26:27 WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[m[33m[21:26:27 WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[m[33m[21:26:27 WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[m[33m[21:26:27 WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[m[33m[21:26:27 WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[m[33m[21:26:27 WARN]: Ambiguity between arguments [openpac-parties, about, player] and [openpac-parties, about, profile] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[m[33m[21:26:27 WARN]: Ambiguity between arguments [openpac-parties, about, profile] and [openpac-parties, about, player] with inputs: [Player, 0123]
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/cloche/tomato as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/create/milling/wild_beetroots as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/crusher/wild_carrots as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/botanypots/crops/cabbages as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/crusher/wild_potatoes as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/create/milling/wild_rice as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/botanypots/crops/rice_crop as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/create/milling/wild_onions as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/create/mixing/pie_crust_from_mixing as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/crusher/wild_rice as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/create/milling/wild_carrots as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/fermenter/tomato as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/crusher/rice_panicle as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/botanypots/crops/tomatoes as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/create/filling/chocolate_pie as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/cloche/onion as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/create/milling/rice_panicle as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/crusher/wild_cabbages as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/cloche/rice as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/create/mixing/tomato_sauce_from_mixing as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/botanypots/soil/rich_soil as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/metalpress/pumpkin as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/cloche/cabbage as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/create/milling/wild_potatoes as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/crusher/wild_beetroots as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/squeezer/cabbage_seeds as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/create/milling/wild_cabbages as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/silentgear/cutting/netherwood as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/botanypots/crops/onions as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/crusher/wild_tomatoes as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/create/mixing/cabbage_slice_from_mixing as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/squeezer/tomato_seeds as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/botanypots/soil/rich_soil_farmland as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/immersiveengineering/crusher/wild_onions as it's conditions were not met
+[m[0m[21:26:31 INFO]: Skipping loading recipe farmersdelight:integration/create/milling/wild_tomatoes as it's conditions were not met
+[m[0m[21:26:31 INFO]: Loaded 9 recipes
+[m[0m[21:26:32 INFO]: Loaded 1350 advancements
+[m[0m[21:26:32 INFO] [s.m.f.t.FluidContainerTransferManager]: Loaded 0 dynamic modifiers in 0.280449 ms
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Beginning loading of data for data loader: summon
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Data loader for summon loaded 7 jsons
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Beginning loading of data for data loader: material/weapon
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Data loader for material/weapon loaded 0 jsons
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Beginning loading of data for data loader: material/armor
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Data loader for material/armor loaded 12 jsons
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Beginning loading of data for data loader: gearconfig/melee
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Data loader for gearconfig/melee loaded 71 jsons
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Beginning loading of data for data loader: gearconfig/armor
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Data loader for gearconfig/armor loaded 46 jsons
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Beginning loading of data for data loader: gearconfig/bow
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Data loader for gearconfig/bow loaded 31 jsons
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Beginning loading of data for data loader: gearconfig/crossbow
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Data loader for gearconfig/crossbow loaded 24 jsons
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Beginning loading of data for data loader: elite_mob
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsLibraries]: Data loader for elite_mob loaded 10 finalized objects
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsGear]: Beginning retriggering trader events
+[m[0m[21:26:32 INFO] [c.i.d.DungeonsGear]: Finished retriggering trader events
+[m[0m[21:26:32 INFO]: Starting minecraft server version 1.18.2
+[m[0m[21:26:32 INFO]: Loading properties
+[m[0m[21:26:32 INFO]: Default game type: SURVIVAL
+[m[0m[21:26:32 INFO]: Generating keypair
+[m[0m[21:26:32 INFO]: Starting Minecraft server on 0.0.0.0:25583
+[m[0m[21:26:32 INFO]: Using epoll channel type
+[m[33m[21:26:32 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[m[33m[21:26:32 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[m[33m[21:26:32 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[m[33m[21:26:32 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[m[0m[21:26:33 INFO] [Minecraft]: This server is running Arclight version arclight-1.18.2-1.0.8-e80a33d2 (MC: 1.18.2) (Implementing API version 1.18.2-R0.1-SNAPSHOT)
+[m[0m[21:26:33 INFO] [Arclight]: Registering for Bukkit ...
+[m[0m[21:26:33 INFO] [Arclight]: Registered 611 new materials with 107 blocks and 504 items
+[m[0m[21:26:33 INFO] [Arclight]: Registered 18 new potion effect types
+[m[0m[21:26:33 INFO] [Arclight]: Registered 136 enchantments
+[m[0m[21:26:33 INFO] [Arclight]: Registered 13 new entity types
+[m[0m[21:26:33 INFO] [Arclight]: Registered 0 new villager professions
+[m[0m[21:26:33 INFO] [Arclight]: Registered 0 new biomes
+[m[0m[21:26:33 INFO] [Minecraft]: Debug logging is enabled
+[m[0m[21:26:33 INFO] [STDOUT]: Server Ping Player Sample Count: 12
+[m[0m[21:26:33 INFO] [Minecraft]: Using 4 threads for Netty based IO
+[m[1;31m[21:26:33 ERROR] [Minecraft]: Ambiguous plugin name `ProtocolLib' for files `plugins/ProtocolLib-0.jar' and `plugins/ProtocolLib.jar' in `plugins'
+[m[1;31m[21:26:33 ERROR] [Minecraft]: Could not load 'plugins/arclight-forge-1.18.2-1.0.8.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
+at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoaderMixin.java:170) ~[arclight-1.18.2-1.0.8-e80a33d2.jar%2369!/:arclight-1.18.2-1.0.8-e80a33d2]
+at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:144) ~[arclight-1.18.2-1.0.8-e80a33d2.jar%2369!/:arclight-1.18.2-1.0.8-e80a33d2]
+at org.bukkit.craftbukkit.v1_18_R2.CraftServer.loadPlugins(CraftServerMixin.java:407) ~[arclight-1.18.2-1.0.8-e80a33d2.jar%2369!/:arclight-1.18.2-1.0.8-e80a33d2]
+at net.minecraft.server.dedicated.DedicatedServer.handler$zeg000$arclight$loadPlugins(DedicatedServerMixin.java:694) ~[server-1.18.2-20220404.173914-srg.jar%2391!/:?]
+at net.minecraft.server.dedicated.DedicatedServer.m_7038_(DedicatedServerMixin.java:167) ~[server-1.18.2-20220404.173914-srg.jar%2391!/:?]
+at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServerMixin.java:2099) ~[server-1.18.2-20220404.173914-srg.jar%2391!/:?]
+at net.minecraft.server.MinecraftServer.m_177918_(MinecraftServerMixin.java:261) ~[server-1.18.2-20220404.173914-srg.jar%2391!/:?]
+at java.lang.Thread.run(Thread.java:833) [?:?]
+Caused by: java.io.FileNotFoundException: Jar does not contain plugin.yml
+... 8 more
+[m[1;31m[21:26:33 ERROR] [STDERR]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[m[33m[21:26:35 WARN] [Minecraft]: Legacy plugin SimpleTpa v6.2 does not specify an api-version.
+[m[0m[21:26:35 INFO] [Arclight]: Loading mappings ...
+[m[0m[21:26:36 INFO] [Arclight]: Loading plugin patchers ...
+[m[33m[21:26:36 WARN] [Minecraft]: Legacy plugin SetHome v5.1.2 does not specify an api-version.
+[m[1;31m[21:26:36 ERROR] [Minecraft]: Could not load 'plugins/worldguard-bukkit-7.0.7-dist.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown dependency WorldEdit. Please download and install WorldEdit to run this plugin.
+at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:269) ~[arclight-1.18.2-1.0.8-e80a33d2.jar%2369!/:arclight-1.18.2-1.0.8-e80a33d2]
+at org.bukkit.craftbukkit.v1_18_R2.CraftServer.loadPlugins(CraftServerMixin.java:407) ~[arclight-1.18.2-1.0.8-e80a33d2.jar%2369!/:arclight-1.18.2-1.0.8-e80a33d2]
+at net.minecraft.server.dedicated.DedicatedServer.handler$zeg000$arclight$loadPlugins(DedicatedServerMixin.java:694) ~[server-1.18.2-20220404.173914-srg.jar%2391!/:?]
+at net.minecraft.server.dedicated.DedicatedServer.m_7038_(DedicatedServerMixin.java:167) ~[server-1.18.2-20220404.173914-srg.jar%2391!/:?]
+at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServerMixin.java:2099) ~[server-1.18.2-20220404.173914-srg.jar%2391!/:?]
+at net.minecraft.server.MinecraftServer.m_177918_(MinecraftServerMixin.java:261) ~[server-1.18.2-20220404.173914-srg.jar%2391!/:?]
+at java.lang.Thread.run(Thread.java:833) [?:?]
+[m[0m[21:26:37 INFO] [SimpleTpa]: Loading SimpleTpa v6.2
+[m[0m[21:26:37 INFO] [SetHome]: Loading SetHome v5.1.2
+[m[0m[21:26:37 INFO] [ViaVersion]: Loading ViaVersion v4.5.1
+[m[0m[21:26:37 INFO] [ViaVersion]: ViaVersion 4.5.1 is now loaded, injecting!
+[m[0m[21:26:37 INFO] [ViaVersion]: Loading 1.12 -> 1.13 mappings...
+[m[0m[21:26:37 INFO] [ViaVersion]: Loading 1.13 -> 1.13.2 mappings...
+[m[0m[21:26:37 INFO] [ViaVersion]: Loading 1.13.2 -> 1.14 mappings...
+[m[0m[21:26:37 INFO] [ViaVersion]: Loading 1.14 -> 1.15 mappings...
+[m[0m[21:26:37 INFO] [ViaVersion]: Loading 1.15 -> 1.16 mappings...
+[m[0m[21:26:37 INFO] [ViaVersion]: Loading block connection mappings ...
+[m[0m[21:26:37 INFO] [ViaVersion]: Loading 1.16 -> 1.16.2 mappings...
+[m[0m[21:26:37 INFO] [ViaVersion]: Loading 1.16.2 -> 1.17 mappings...
+[m[0m[21:26:37 INFO] [ViaVersion]: Loading 1.17 -> 1.18 mappings...
+[m[0m[21:26:37 INFO] [ViaVersion]: Loading 1.18 -> 1.19 mappings...
+[m[0m[21:26:37 INFO] [ViaVersion]: Loading 1.19 -> 1.19.3 mappings...
+[m[0m[21:26:37 INFO] [ProtocolLib]: Loading ProtocolLib v4.8.0
+[m[33m[21:26:37 WARN] [ProtocolLib]: Loaded class javax.annotation.Nonnull from DiscordSRV v1.26.0 which is not a depend or softdepend of this plugin.
+[m[0m[21:26:39 INFO] [Multiverse-Core]: Loading Multiverse-Core v4.3.1-b861
+[m[0m[21:26:39 INFO] [LuckPerms]: Loading LuckPerms v5.4.40
+[m[0m[21:26:39 INFO] [Citizens]: Loading Citizens v2.0.30-SNAPSHOT (build 2932)
+[m[0m[21:26:39 INFO] [SkinsRestorer]: Loading SkinsRestorer v14.2.8
+[m[0m[21:26:39 INFO] [MythicMobs]: Loading MythicMobs v5.2.1-fd1d0777
+[m[0m[21:26:39 INFO] [Minecraft]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[m[0m[21:26:39 INFO] [DiscordSRV]: Loading DiscordSRV v1.26.0
+[m[0m[21:26:39 INFO] [ProtocolLib]: Enabling ProtocolLib v4.8.0
+[m[0m[21:26:39 INFO] [ProtocolLib]: Started structure compiler thread.
+[m[0m[21:26:39 INFO] [LuckPerms]: Enabling LuckPerms v5.4.40
+[m[0m[21:26:40 INFO] [Console]: [0;36;1m       [0;36m __    [m
+[m[0m[21:26:40 INFO] [Console]: [0;36;1m  |    [0;36m|__)   [0;32mLuckPerms[m [0;36;1mv5.4.40[m
+[m[0m[21:26:40 INFO] [Console]: [0;36;1m  |___ [0;36m|      [0;30;1mRunning on Bukkit - Arclight[m
+[m[0m[21:26:40 INFO] [Console]:
+[m[0m[21:26:40 INFO] [LuckPerms]: Loading configuration...
+[m[0m[21:26:40 INFO] [LuckPerms]: Loading storage provider... [H2]
+[m[0m[21:26:41 INFO] [LuckPerms]: Loading internal permission managers...
+[m[0m[21:26:41 INFO] [LuckPerms]: Performing initial data load...
+[m[0m[21:26:41 INFO] [LuckPerms]: Successfully enabled. (took 2197ms)
+[m[0m[21:26:41 INFO] [x.p.OpenPartiesAndClaims]: Initializing Open Parties and Claims for the server...
+[m[0m[21:26:41 INFO] [x.p.OpenPartiesAndClaims]: Loading server info!
+[m[0m[21:26:41 INFO] [x.p.OpenPartiesAndClaims]: Loading player configs...
+[m[0m[21:26:41 INFO] [x.p.OpenPartiesAndClaims]: Loaded player configs!
+[m[0m[21:26:41 INFO] [x.p.OpenPartiesAndClaims]: Loading parties...
+[m[0m[21:26:41 INFO] [x.p.OpenPartiesAndClaims]: Loaded parties!
+[m[0m[21:26:41 INFO] [x.p.OpenPartiesAndClaims]: Fixing party inconsistencies...
+[m[0m[21:26:42 INFO]: Preparing level "world"
+[m[0m[21:26:42 INFO] [Arclight]: Registered 0 new dimensions
+[m[0m[21:26:42 INFO] [Minecraft]: -------- World Settings For [world] --------
+[m[0m[21:26:42 INFO] [Minecraft]: Simulation Distance: 10
+[m[0m[21:26:42 INFO] [Minecraft]: Experience Merge Radius: 3.0
+[m[0m[21:26:42 INFO] [Minecraft]: Mob Spawn Range: 6
+[m[0m[21:26:42 INFO] [Minecraft]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true / Isa false
+[m[0m[21:26:42 INFO] [Minecraft]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[m[0m[21:26:42 INFO] [Minecraft]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[m[0m[21:26:42 INFO] [Minecraft]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[m[0m[21:26:42 INFO] [Minecraft]: Zombie Aggressive Towards Villager: true
+[m[0m[21:26:42 INFO] [Minecraft]: Allow Zombie Pigmen to spawn from portal blocks: true
+[m[0m[21:26:42 INFO] [Minecraft]: Cactus Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Cane Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Melon Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Mushroom Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Pumpkin Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Sapling Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Beetroot Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Carrot Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Potato Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Wheat Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: NetherWart Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Vine Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Cocoa Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Bamboo Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: SweetBerry Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Kelp Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[m[0m[21:26:42 INFO] [Minecraft]: Max TNT Explosions: 100
+[m[0m[21:26:42 INFO] [Minecraft]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[m[0m[21:26:42 INFO] [Minecraft]: Item Merge Radius: 2.5
+[m[0m[21:26:42 INFO] [Minecraft]: Item Despawn Rate: 6000
+[m[0m[21:26:42 INFO] [Minecraft]: View Distance: 10
+[m[0m[21:26:42 INFO] [Minecraft]: Nerfing mobs spawned from spawners: false
+[m[0m[21:26:42 INFO] [Minecraft]: -------- World Settings For [world/DIM1] --------
+[m[0m[21:26:42 INFO] [Minecraft]: Simulation Distance: 10
+[m[0m[21:26:42 INFO] [Minecraft]: Experience Merge Radius: 3.0
+[m[0m[21:26:42 INFO] [Minecraft]: Mob Spawn Range: 6
+[m[0m[21:26:42 INFO] [Minecraft]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true / Isa false
+[m[0m[21:26:42 INFO] [Minecraft]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[m[0m[21:26:42 INFO] [Minecraft]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[m[0m[21:26:42 INFO] [Minecraft]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[m[0m[21:26:42 INFO] [Minecraft]: Zombie Aggressive Towards Villager: true
+[m[0m[21:26:42 INFO] [Minecraft]: Allow Zombie Pigmen to spawn from portal blocks: true
+[m[0m[21:26:42 INFO] [Minecraft]: Cactus Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Cane Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Melon Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Mushroom Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Pumpkin Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Sapling Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Beetroot Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Carrot Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Potato Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Wheat Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: NetherWart Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Vine Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Cocoa Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Bamboo Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: SweetBerry Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Kelp Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[m[0m[21:26:42 INFO] [Minecraft]: Max TNT Explosions: 100
+[m[0m[21:26:42 INFO] [Minecraft]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[m[0m[21:26:42 INFO] [Minecraft]: Item Merge Radius: 2.5
+[m[0m[21:26:42 INFO] [Minecraft]: Item Despawn Rate: 6000
+[m[0m[21:26:42 INFO] [Minecraft]: View Distance: 10
+[m[0m[21:26:42 INFO] [Minecraft]: Nerfing mobs spawned from spawners: false
+[m[0m[21:26:42 INFO] [Minecraft]: -------- World Settings For [world/DIM-1] --------
+[m[0m[21:26:42 INFO] [Minecraft]: Simulation Distance: 10
+[m[0m[21:26:42 INFO] [Minecraft]: Experience Merge Radius: 3.0
+[m[0m[21:26:42 INFO] [Minecraft]: Mob Spawn Range: 6
+[m[0m[21:26:42 INFO] [Minecraft]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv true / Isa false
+[m[0m[21:26:42 INFO] [Minecraft]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[m[0m[21:26:42 INFO] [Minecraft]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[m[0m[21:26:42 INFO] [Minecraft]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[m[0m[21:26:42 INFO] [Minecraft]: Zombie Aggressive Towards Villager: true
+[m[0m[21:26:42 INFO] [Minecraft]: Allow Zombie Pigmen to spawn from portal blocks: true
+[m[0m[21:26:42 INFO] [Minecraft]: Cactus Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Cane Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Melon Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Mushroom Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Pumpkin Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Sapling Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Beetroot Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Carrot Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Potato Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Wheat Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: NetherWart Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Vine Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Cocoa Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Bamboo Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: SweetBerry Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Kelp Growth Modifier: 100%
+[m[0m[21:26:42 INFO] [Minecraft]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[m[0m[21:26:42 INFO] [Minecraft]: Max TNT Explosions: 100
+[m[0m[21:26:42 INFO] [Minecraft]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[m[0m[21:26:42 INFO] [Minecraft]: Item Merge Radius: 2.5
+[m[0m[21:26:42 INFO] [Minecraft]: Item Despawn Rate: 6000
+[m[0m[21:26:42 INFO] [Minecraft]: View Distance: 10
+[m[0m[21:26:42 INFO] [Minecraft]: Nerfing mobs spawned from spawners: false
+[m[0m[21:26:42 INFO] [SimpleTpa]: Enabling SimpleTpa v6.2
+[m[0m[21:26:42 INFO] [Console]: [0;33;1m[21m[SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9[m
+[m[0m[21:26:42 INFO] [Console]: [0;33;1m[21m[SimpleTpa] Simple Tpa has been enabled on version 6.2[m
+[m[0m[21:26:42 INFO] [Minecraft]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[m[0m[21:26:42 INFO] [SetHome]: Enabling SetHome v5.1.2
+[m[0m[21:26:42 INFO] [ViaVersion]: Enabling ViaVersion v4.5.1
+[m[0m[21:26:42 INFO] [Multiverse-Core]: Enabling Multiverse-Core v4.3.1-b861
+[m[33m[21:26:42 WARN] [Multiverse-Core]: "Multiverse-Core v4.3.1-b861" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[m[0m[21:26:42 INFO] [Minecraft]: [Multiverse-Core] [0;32;1mWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.[m
+[m[33m[21:26:42 WARN] [Minecraft]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: world_the_end
+[m[33m[21:26:42 WARN] [Minecraft]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[m[33m[21:26:42 WARN] [Minecraft]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: world_nether
+[m[33m[21:26:42 WARN] [Minecraft]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[m[33m[21:26:42 WARN] [Minecraft]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: survival
+[m[33m[21:26:42 WARN] [Minecraft]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[m[0m[21:26:42 INFO] [Minecraft]: [Multiverse-Core] 3 - World(s) loaded.
+[m[33m[21:26:42 WARN] [Minecraft]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
+[m[0m[21:26:42 INFO] [Minecraft]: [Multiverse-Core] Version 4.3.1-b861 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[m[0m[21:26:42 INFO] [Citizens]: Enabling Citizens v2.0.30-SNAPSHOT (build 2932)
+[m[0m[21:26:42 INFO] [Citizens]: Loading external libraries
+[m[0m[21:26:43 INFO] [SkinsRestorer]: Enabling SkinsRestorer v14.2.8
+[m[0m[21:26:43 INFO] [Console]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mDetected Minecraft [33;1mv1_18_R2[32;1m, using [33;1mMappingSpigotSkinRefresher[32;1m.[0;39m
+[m[0m[21:26:43 INFO] [MythicMobs]: Enabling MythicMobs v5.2.1-fd1d0777
+[m[0m[21:26:44 INFO] [MythicMobs]: Loading MythicMobs for Spigot (MC: 1.18.2)...[0m
+[m[0m[21:26:44 INFO] [MythicMobs]: The server is running Spigot; disabled PaperSpigot exclusive functionality[0m
+[m[33m[21:26:44 WARN] [MythicMobs]: Loaded class org.slf4j.impl.StaticLoggerBinder from DiscordSRV v1.26.0 which is not a depend or softdepend of this plugin.
+[m[0m[21:26:44 INFO] [i.l.m.u.r.Reflections]: Reflections took 64 ms to scan 1 urls, producing 3 keys and 21 values
+[m[0m[21:26:44 INFO] [i.l.m.u.r.Reflections]: Reflections took 12 ms to scan 1 urls, producing 6 keys and 101 values
+[m[0m[21:26:44 INFO] [i.l.m.u.r.Reflections]: Reflections took 9 ms to scan 1 urls, producing 0 keys and 0 values
+[m[0m[21:26:44 INFO] [i.l.m.u.r.Reflections]: Reflections took 9 ms to scan 1 urls, producing 3 keys and 36 values
+[m[0m[21:26:44 INFO]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[m[0m[21:26:44 INFO] [i.l.m.u.r.Reflections]: Reflections took 7 ms to scan 1 urls, producing 4 keys and 14 values
+[m[0m[21:26:44 INFO] [i.l.m.u.r.Reflections]: Reflections took 10 ms to scan 1 urls, producing 4 keys and 14 values
+[m[0m[21:26:44 INFO] [MythicMobs]: MythicMobs ProtocolLib Support has been enabled![0m
+[m[0m[21:26:44 INFO] [MythicMobs]: Base directory /home/container/plugins/MythicMobs/SavedData
+[m[0m[21:26:44 INFO] [MythicMobs]: Module directory /home/container/plugins/MythicMobs/SavedData/worlds
+[m[0m[21:26:44 INFO] [i.l.m.u.r.Reflections]: Reflections took 14 ms to scan 1 urls, producing 11 keys and 445 values
+[m[0m[21:26:44 INFO] [i.l.m.u.r.Reflections]: Reflections took 27 ms to scan 1 urls, producing 29 keys and 885 values
+[m[0m[21:26:44 INFO] [i.l.m.u.r.Reflections]: Reflections took 27 ms to scan 1 urls, producing 9 keys and 152 values
+[m[0m[21:26:44 INFO] [i.l.m.u.r.Reflections]: Reflections took 6 ms to scan 1 urls, producing 2 keys and 11 values
+[m[0m[21:26:44 INFO] [MythicMobs]: [36mLOADED[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: Loading Packs...[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: Loading Items...[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: Loading Item Groups...[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: Loading Skills...[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: Loading Drop Tables...[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: Loading Random Spawns...[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: Loading Spawn Blocks...[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: [32m✓[37m Loaded 8 mobs.[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: [32m✓[37m Loaded 3 vanilla mob overrides.[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: [32m✓[37m Loaded 0 mob stacks.[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: [32m✓[37m Loaded 3 skills.[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: [32m✓[37m Loaded 0 random spawns.[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: [32m✓[37m Loaded 3 mythic items.[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: [32m✓[37m Loaded 2 drop tables.[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: [32m✓[37m Loaded 0 mob spawners.[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: MythicMobs configuration file loaded successfully.[0m
+[m[1;31m[21:26:45 ERROR] [MythicMobs]: Plugin MythicMobs v5.2.1-fd1d0777 has failed to register events for class io.lumine.mythic.bukkit.adapters.BukkitSkillTriggers because com/destroystokyo/paper/event/entity/CreeperIgniteEvent does not exist.
+[m[0m[21:26:45 INFO] [MythicMobs]: Started up bStats Metrics[0m
+[m[0m[21:26:45 INFO] [MythicMobs]: [32m✓ MythicMobs v5.2.1 ( build fd1d0777 ) has been successfully loaded![0m[0m
+[m[0m[21:26:45 INFO] [DiscordSRV]: Enabling DiscordSRV v1.26.0
+[m[0m[21:26:45 INFO] [Minecraft]: Server permissions file permissions.yml is empty, ignoring it
+[m[0m[21:26:45 INFO]: Preparing start region for dimension minecraft:overworld
+[m[0m[21:26:45 INFO] [DiscordSRV]: DiscordSRV is up-to-date. (819b02508abe8879cfc2a513fc6cea383b70b5c5)
+[m[0m[21:26:46 INFO]: Preparing spawn area: 0%
+[m[0m[21:26:46 INFO]: Preparing spawn area: 0%
+[m[0m[21:26:46 INFO] [DiscordSRV]: [JDA] Login Successful!
+[m[0m[21:26:46 INFO] [DiscordSRV]: [JDA] Connected to WebSocket
+[m[0m[21:26:46 INFO]: Preparing spawn area: 0%
+[m[0m[21:26:47 INFO]: Preparing spawn area: 0%
+[m[0m[21:26:47 INFO] [DiscordSRV]: [JDA] Finished Loading!
+[m[0m[21:26:47 INFO] [DiscordSRV]: Found server G:El servidor(1075151793278943293)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰📝꒱ʀᴜʟᴇs﹣ɪɴғᴏ(1075151793975197739)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🍪꒱ʙɪᴇɴᴠᴇɴɪᴅᴀ(1075151793975197740)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🫂꒱ʟᴇᴀᴠᴇs(1075151793975197741)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🔐꒱ᴠᴇʀɪғɪᴄᴀᴛᴇ(1075151793975197742)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🍥꒱ɢᴇɴᴇʀᴀʟ(1075247847542358027)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🧊꒱ᴄᴍᴅ(1075248008968552509)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🖥꒱sᴛʀᴇᴀᴍs﹣vɪᴅᴇᴏs(1075542846641287210)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🍯꒱ᴍᴜʟᴛɪᴍᴇᴅɪᴀ(1075248129294745671)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🥛꒱ʟᴇᴠᴇʟs(1075248235339321384)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰⛏꒱mɪɴᴇᴄʀᴀғᴛ﹣iɴғᴏ(1075540736499523675)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🎥꒱ᴀɴɪᴍᴇ﹣ᴄʜᴀᴛ(1075151794583392322)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🌟꒱sʜɪᴛᴘᴏsᴛ(1075248306084646912)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:mɪɴᴇᴄʀᴀғᴛ(1075558595422330892)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:dʏɪɴɢ﹣lɪɢʜᴛ(1075557338750132264)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:mᴏʙɪʟᴇ﹣lᴇɢᴇɴᴅs(1075557858806091847)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:aᴍᴏɴɢus(1075558772740731002)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:mᴜʟᴛɪᴠᴇʀsᴜs(1075559098004811957)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰💐꒱ᴘɪɴɢs(1075253375056232508)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🌼꒱ɢᴇɴᴇʀᴏ(1075253430458781776)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🌺꒱ᴇᴅᴀᴅ(1075253622474027079)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🇦🇷꒱ᴘᴀɪsᴇs(1075253699586310144)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰✨꒱ᴄᴏʟᴏʀᴇs(1075253753030135839)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰꒱ᴠᴏɪᴄᴇ﹣ᴍᴀsᴛᴇʀ(1075238653321818122)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:tɪᴄᴋᴇᴛ(1075502840056909844)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:moderator-only(1075201405314400337)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:mc-general(1075151795212538042)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:mc-console(1075151795212538043)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:moderator-chat(1075151795212538044)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:moderator-commands(1075151795212538045)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:moderation-logs(1075151795212538046)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:promotions(1075151795715833946)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:verification-logs-alfidentifier(1075151795715833947)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:ticket-0002(1075209881772101754)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:꒰🕹꒱tipo-de-gamer(1075862744089251923)
+[m[0m[21:26:47 INFO] [DiscordSRV]: Found server G:NiTtsuFaztTest(958456524022378566)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:general(1049183992257191966)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:general(958456524022378569)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:testbot(958456763806531755)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:juegos-testeados(983413274815123546)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:servers-mc-java(983799809855066122)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:test-servidor(1022545694348824586)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:consola(1065341719039713402)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:ingame-chat(1065341974833545247)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:info-elitemobs(1065373587327942767)
+[m[0m[21:26:47 INFO] [DiscordSRV]: - TC:status-server-mc(1065379246635229195)
+[m[0m[21:26:47 INFO] [DiscordSRV]: Console forwarding assigned to channel TC:mc-console(1075151795212538043)
+[m[0m[21:26:47 INFO]: Preparing spawn area: 4%
+[m[0m[21:26:47 INFO] [DiscordSRV]: Enabling LuckPerms hook
+[m[0m[21:26:48 INFO]: Preparing spawn area: 4%
+[m[0m[21:26:48 INFO]: Preparing spawn area: 18%
+[m[0m[21:26:49 INFO]: Preparing spawn area: 37%
+[m[0m[21:26:49 INFO]: Preparing spawn area: 100%
+[m[0m[21:26:50 INFO]: Preparing spawn area: 100%
+[m[0m[21:26:50 INFO]: Preparing spawn area: 100%
+[m[0m[21:26:51 INFO]: Preparing spawn area: 100%
+[m[0m[21:26:51 INFO]: Preparing spawn area: 100%
+[m[0m[21:26:52 INFO]: Preparing spawn area: 100%
+[m[0m[21:26:52 INFO]: Preparing spawn area: 100%
+[m[0m[21:26:53 INFO]: Preparing spawn area: 100%
+[m[0m[21:26:53 INFO]: Time elapsed: 7579 ms
+[m[0m[21:26:53 INFO]: Done (11.461s)! For help, type "help"
+generic.state_changed.on
+[m[0m[21:26:53 INFO]: Disconnecting Player (server is still starting): Server is still starting! Please wait before reconnecting.
+[m[0m[21:26:53 INFO]: Successfully initialized permission handler forge:default_handler
+[m[0m[21:26:53 INFO] [Arclight]: Forwarding forge permission[forge:default_handler] to bukkit
+[m[0m[21:26:53 INFO] [x.p.OpenPartiesAndClaims]: Loading claims...
+[m[0m[21:26:53 INFO] [x.p.OpenPartiesAndClaims]: Loaded claims in 0ms
+[m[0m[21:26:53 INFO] [ViaVersion]: ViaVersion detected server version: 1.18.2 (758)
+[m[0m[21:26:53 INFO] [Minecraft]: [Citizens] Loaded 0 NPCs.
+[m[0m[21:26:53 INFO] [ViaVersion]: Finished mapping loading, shutting down loader executor!
+[m[0m[21:26:53 INFO] [Console]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[m[0m[21:26:53 INFO] [Console]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[m[0m[21:26:53 INFO] [Console]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[m[0m[21:26:53 INFO] [Console]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[m[0m[21:26:53 INFO] [Console]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[m[0m[21:26:53 INFO] [Console]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[m[0m[21:26:53 INFO] [Console]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[m[0m[21:26:53 INFO] [Console]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Current version: [32;1m14.2.8[0;39m
+[m[0m[21:26:53 INFO] [Console]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[m[0m[21:26:53 INFO] [Console]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[m[0m[21:27:07 INFO]: UUID of player NiTtsu03 is be8ff70a-1511-3507-b0b5-e30bab0620e1
+[m[0m[21:27:09 INFO]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@1564cf7c
+[m[0m[21:27:09 INFO]: NiTtsu03[/186.132.208.112:63303] logged in with entity id 144 at (210.9422210301622, 71.0, 366.58289282964864)
+[m[0m[21:27:09 INFO] [x.p.OpenPartiesAndClaims]: Updating all forceload tickets for be8ff70a-1511-3507-b0b5-e30bab0620e1
+[m[1;31m[21:27:10 ERROR] [DiscordSRV]: Your AvatarUrl does not contain the {username} placeholder even though this server is using offline UUIDs.
+[m[1;31m[21:27:10 ERROR] [DiscordSRV]: https://cravatar.eu/helmavatar/{username}/{size}.png#{texture} will be used because the default value does not support offline mode servers
+[m[1;31m[21:27:10 ERROR] [DiscordSRV]: You should set your AvatarUrl to https://cravatar.eu/helmavatar/{username}/{size}.png#{texture} (or another url that supports usernames) to get rid of this error
+[m[33m[21:27:21 WARN]: Tried to load a block entity for block Block{minecraft:fletching_table} but failed at location BlockPos{x=421, y=-25, z=187}
+[m[0m[21:27:24 INFO]: NiTtsu03 issued server command: /gamemode creative
+[m[0m[21:27:24 INFO]: [NiTtsu03: Set own game mode to Creative Mode]
+[m[33m[21:28:02 WARN]: Tried to load a block entity for block Block{minecraft:smithing_table} but failed at location BlockPos{x=14, y=-45, z=201}
+[m[33m[21:28:53 WARN]: Tried to load a block entity for block Block{minecraft:fletching_table} but failed at location BlockPos{x=-46, y=6, z=457}
+[m[0m[21:28:55 INFO]: NiTtsu03 issued server command: /gamemode survival
+[m[0m[21:28:55 INFO]: [NiTtsu03: Set own game mode to Survival Mode]
+[m[0m[21:29:02 INFO]: Villager Villager['Villager'/395, l='ServerLevel[world]', x=16.72, y=64.56, z=359.63] died, message: 'Villager suffocated in a wall'
+[m[0m[21:29:08 INFO]: NiTtsu03 issued server command: /gamemode creative
+[m[0m[21:29:08 INFO]: [NiTtsu03: Set own game mode to Creative Mode]
+[m[0m[21:29:29 INFO]: NiTtsu03 has made the advancement [Monster Hunter]
+[m[0m[21:30:14 INFO]: NiTtsu03 has made the advancement [Take Aim]
+[m[0m[21:30:48 INFO]: NiTtsu03 issued server command: /gamemode survival
+[m[0m[21:30:48 INFO]: [NiTtsu03: Set own game mode to Survival Mode]
+[m[0m[21:31:40 INFO]: NiTtsu03 issued server command: /gamemode creative
+[m[0m[21:31:40 INFO]: [NiTtsu03: Set own game mode to Creative Mode]
+[m[0m[21:35:03 INFO]: NiTtsu03 lost connection: Disconnected
+[m[0m[21:35:03 INFO] [x.p.OpenPartiesAndClaims]: Updating all forceload tickets for be8ff70a-1511-3507-b0b5-e30bab0620e1
+[m[0m[21:35:03 INFO]: NiTtsu03 left the game
+[m[1;31m[10:42:00 ERROR]: Channels [openpartiesandclaims:main,mantle:network,cosmeticarmorreworked:main,sophisticatedbackpacks:channel,sophisticatedcore:channel,dungeons_gear:network,artifacts:main,curios:main,geckolib3:main,dungeons_libraries:network,elevatorid:main_channel] rejected vanilla connections
+[m[0m[10:42:00 INFO]: Disconnecting VANILLA connection attempt: This server has mods that require Forge to be installed on the client. Contact your server admin for more details.
+[m[1;31m[10:42:10 ERROR]: Channels [openpartiesandclaims:main,mantle:network,cosmeticarmorreworked:main,sophisticatedbackpacks:channel,sophisticatedcore:channel,dungeons_gear:network,artifacts:main,curios:main,geckolib3:main,dungeons_libraries:network,elevatorid:main_channel] rejected vanilla connections
+[m[0m[10:42:10 INFO]: Disconnecting VANILLA connection attempt: This server has mods that require Forge to be installed on the client. Contact your server admin for more details.
+[m[1;31m[10:42:13 ERROR]: Channels [openpartiesandclaims:main,mantle:network,cosmeticarmorreworked:main,sophisticatedbackpacks:channel,sophisticatedcore:channel,dungeons_gear:network,artifacts:main,curios:main,geckolib3:main,dungeons_libraries:network,elevatorid:main_channel] rejected vanilla connections
+[m[0m[10:42:13 INFO]: Disconnecting VANILLA connection attempt: This server has mods that require Forge to be installed on the client. Contact your server admin for more details.
+[m[0m[12:48:53 INFO]: UUID of player NiTtsu03 is be8ff70a-1511-3507-b0b5-e30bab0620e1
+[m[0m[12:48:56 INFO]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@2fbcb3fa
+[m[0m[12:48:56 INFO]: NiTtsu03[/186.132.208.112:62740] logged in with entity id 1553 at (252.18738844129285, 68.0, 380.5926381754503)
+[m[0m[12:48:56 INFO] [x.p.OpenPartiesAndClaims]: Updating all forceload tickets for be8ff70a-1511-3507-b0b5-e30bab0620e1
+[m[0m[12:49:15 INFO]: NiTtsu03 issued server command: /gamemode creative
+[m[0m[12:49:15 INFO]: [NiTtsu03: Set own game mode to Creative Mode]
+[m[33m[12:50:10 WARN]: Tried to load a block entity for block Block{minecraft:fletching_table} but failed at location BlockPos{x=311, y=28, z=108}
+[m[33m[12:50:12 WARN]: Tried to load a block entity for block Block{minecraft:smithing_table} but failed at location BlockPos{x=247, y=-29, z=81}
+[m[33m[12:50:14 WARN]: Tried to load a block entity for block Block{minecraft:fletching_table} but failed at location BlockPos{x=214, y=-26, z=70}
+[m[33m[12:50:14 WARN]: Tried to load a block entity for block Block{minecraft:fletching_table} but failed at location BlockPos{x=357, y=-40, z=79}
+[m[33m[12:50:17 WARN]: Tried to load a block entity for block Block{minecraft:fletching_table} but failed at location BlockPos{x=428, y=-7, z=107}
+[m[33m[12:50:20 WARN]: Tried to load a block entity for block Block{minecraft:smithing_table} but failed at location BlockPos{x=435, y=-39, z=97}
+generic.state_changed.stopping
+generic.state_changed.off
+[m
+generic.state_changed.killed
